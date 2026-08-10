@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wilson Concrete Pumping | Line &amp; Boom Concrete Pumping, New Zealand</title>
-<meta name="description" content="Wilson Concrete Pumping — line and boom concrete pump hire for residential slabs, driveways and commercial pours. Fast, clean placement exactly where you need it. Call 027 221 0999.">
+<meta name="description" content="Wilson Concrete Pumping: line and boom concrete pump hire for residential slabs, driveways and commercial pours. Fast, clean placement exactly where you need it. Call 027 221 0999.">
 <meta property="og:title" content="Wilson Concrete Pumping | Line &amp; Boom Concrete Pumping">
-<meta property="og:description" content="Concrete placed fast, clean and exactly where you need it — line and boom pump hire across New Zealand.">
+<meta property="og:description" content="Concrete placed fast, clean and exactly where you need it. Line and boom pump hire across New Zealand.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1590247813693-5541d1c609fd?w=1200&q=80">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%2314151a'/%3E%3Ctext x='50' y='70' font-family='Arial Black,sans-serif' font-size='58' font-weight='900' fill='%23ff6a1a' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+<meta property="og:image" content="https://wilson-concrete-pumping-demo.vercel.app/img/hero-mist.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%23a81e4d'/%3E%3Ctext x='50' y='70' font-family='Arial Black,sans-serif' font-size='58' font-weight='900' fill='%23ffffff' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 :root{
   --ink:#0e0f12; --charcoal:#16181d; --charcoal-2:#1d2027;
   --bone:#f3f0e9; --light:#ffffff; --text:#20232b; --muted:#5b606c;
-  --line:#e4dfd4; --accent:#ff6a1a; --accent-deep:#e2560b;
+  --line:#e4dfd4; --accent:#a81e4d; --accent-deep:#841238;
   --radius:6px; --maxw:1200px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -45,10 +45,10 @@ h1,h2,h3,.display{font-family:'Bebas Neue',sans-serif;font-weight:400;letter-spa
 .section-head.on-dark p{color:#b9bdc7}
 
 /* ---------- intro overlay ---------- */
-#intro{position:fixed;inset:0;z-index:1000;background:var(--ink);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;transition:opacity .7s ease,visibility .7s}
+#intro{position:fixed;inset:0;z-index:1000;background:#fff;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:22px;transition:opacity .7s ease,visibility .7s}
 #intro.done{opacity:0;visibility:hidden}
-#intro .il{font-family:'Bebas Neue';font-size:clamp(2.4rem,9vw,4.4rem);color:#fff;letter-spacing:.04em;opacity:0;transform:translateY(14px);animation:introIn .9s .15s forwards}
-#intro .il b{color:var(--accent);font-weight:400}
+#intro .il{opacity:0;transform:translateY(14px);animation:introIn .9s .15s forwards}
+#intro .il img{width:min(440px,78vw);height:auto;display:block}
 #intro .bar{width:0;height:3px;background:var(--accent);animation:introBar 1.5s .2s forwards}
 @keyframes introIn{to{opacity:1;transform:none}}
 @keyframes introBar{to{width:180px}}
@@ -84,14 +84,14 @@ header.scrolled{background:rgba(14,15,18,.92);backdrop-filter:blur(10px);box-sha
 .hero-slides .slide.active{opacity:1}
 .hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(14,15,18,.55) 0%,rgba(14,15,18,.5) 45%,rgba(14,15,18,.92) 100%)}
 .hero-inner{position:relative;z-index:2;width:100%;padding:130px 0 56px}
-.hero .eyebrow{color:#ffb27a}
-.hero .eyebrow::before{background:#ffb27a}
+.hero .eyebrow{color:#f0a3c2}
+.hero .eyebrow::before{background:#f0a3c2}
 .hero h1{color:#fff;font-size:clamp(3.2rem,9vw,6.6rem);margin:18px 0 18px;max-width:16ch;text-shadow:0 2px 30px rgba(0,0,0,.4)}
 .hero h1 em{color:var(--accent);font-style:normal}
 .hero p.lead{color:#dfe2e8;font-size:clamp(1.02rem,2.5vw,1.22rem);max-width:52ch;margin-bottom:30px}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px}
 .rating-badge{margin-top:28px;display:inline-flex;align-items:center;gap:14px;background:rgba(255,255,255,.1);backdrop-filter:blur(9px);border:1px solid rgba(255,255,255,.22);border-radius:10px;padding:13px 18px;color:#fff}
-.rating-badge .stars{display:flex;gap:2px;color:var(--accent)}
+.rating-badge .stars{display:flex;gap:2px;color:#f0a3c2}
 .rating-badge .stars svg{width:17px;height:17px}
 .rating-badge b{font-family:'Bebas Neue';font-size:1.5rem;letter-spacing:.03em;line-height:1}
 .rating-badge small{display:block;font-size:.76rem;color:#c9cdd6;letter-spacing:.02em}
@@ -101,7 +101,7 @@ header.scrolled{background:rgba(14,15,18,.92);backdrop-filter:blur(10px);box-sha
 .trust-grid{display:grid;grid-template-columns:repeat(3,1fr)}
 .trust-item{display:flex;gap:16px;align-items:flex-start;padding:34px 26px;border-right:1px solid rgba(255,255,255,.07)}
 .trust-item:last-child{border-right:0}
-.trust-item .ic{width:44px;height:44px;flex:none;border-radius:8px;background:rgba(255,106,26,.14);display:grid;place-items:center;color:var(--accent)}
+.trust-item .ic{width:44px;height:44px;flex:none;border-radius:8px;background:rgba(168,30,77,.14);display:grid;place-items:center;color:var(--accent)}
 .trust-item .ic svg{width:23px;height:23px}
 .trust-item h4{font-family:'Bebas Neue';font-weight:400;font-size:1.35rem;color:#fff;letter-spacing:.03em;margin-bottom:3px}
 .trust-item p{color:#a9aeba;font-size:.9rem;line-height:1.5}
@@ -123,7 +123,7 @@ header.scrolled{background:rgba(14,15,18,.92);backdrop-filter:blur(10px);box-sha
 .about{background:var(--light)}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 .about-media{position:relative}
-.about-media img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);filter:saturate(.85) contrast(1.05)}
+.about-media img{width:100%;height:auto;border-radius:var(--radius);filter:saturate(.85) contrast(1.05)}
 .about-media .corner{position:absolute;bottom:-18px;left:-18px;background:var(--accent);color:#fff;padding:18px 22px;border-radius:var(--radius);max-width:210px}
 .about-media .corner b{font-family:'Bebas Neue';font-weight:400;font-size:2.6rem;line-height:.9;display:block}
 .about-media .corner span{font-size:.78rem;line-height:1.3;display:block;margin-top:5px}
@@ -134,12 +134,19 @@ header.scrolled{background:rgba(14,15,18,.92);backdrop-filter:blur(10px);box-sha
 .checklist .ck{width:26px;height:26px;flex:none;border-radius:6px;background:var(--accent);display:grid;place-items:center;color:#fff}
 .checklist .ck svg{width:15px;height:15px}
 
+/* ---------- recent work ---------- */
+.work{background:var(--light)}
+.work-gallery{column-count:3;column-gap:18px}
+.work-gallery img{width:100%;height:auto;margin-bottom:18px;border-radius:var(--radius);break-inside:avoid;filter:saturate(.85) contrast(1.05)}
+@media(max-width:900px){.work-gallery{column-count:2}}
+@media(max-width:640px){.work-gallery{column-count:1}}
+
 /* ---------- crew ---------- */
 .crew{background:var(--charcoal)}
-.badge-pill{display:inline-block;background:rgba(255,106,26,.16);color:var(--accent);font-weight:700;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 13px;border-radius:20px;margin-bottom:14px}
+.badge-pill{display:inline-block;background:rgba(168,30,77,.16);color:var(--accent);font-weight:700;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 13px;border-radius:20px;margin-bottom:14px}
 .crew-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .crew-card{background:var(--charcoal-2);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:30px 26px;text-align:center;transition:transform .25s,border-color .25s}
-.crew-card:hover{transform:translateY(-5px);border-color:rgba(255,106,26,.5)}
+.crew-card:hover{transform:translateY(-5px);border-color:rgba(168,30,77,.5)}
 .avatar{width:78px;height:78px;border-radius:50%;background:var(--ink);border:2px solid var(--accent);display:grid;place-items:center;margin:0 auto 16px;font-family:'Bebas Neue';font-size:1.9rem;color:var(--accent);letter-spacing:.03em}
 .crew-card h3{font-size:1.5rem;color:#fff;margin-bottom:4px}
 .crew-card .role{color:var(--accent);font-weight:600;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
@@ -161,7 +168,7 @@ header.scrolled{background:rgba(14,15,18,.92);backdrop-filter:blur(10px);box-sha
 
 /* ---------- leave a review banner ---------- */
 .leave{background:var(--ink);position:relative;overflow:hidden}
-.leave::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(255,106,26,.22),transparent 55%)}
+.leave::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(168,30,77,.22),transparent 55%)}
 .leave-inner{position:relative;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
 .leave h2{color:#fff;font-size:clamp(2.2rem,5vw,3.4rem);max-width:18ch}
 .leave p{color:#b9bdc7;margin-top:8px}
@@ -172,7 +179,7 @@ header.scrolled{background:rgba(14,15,18,.92);backdrop-filter:blur(10px);box-sha
 .contact-info h2{color:#fff;font-size:clamp(2.4rem,5vw,3.6rem);margin:14px 0 18px}
 .contact-info>p{color:#b9bdc7;margin-bottom:26px;max-width:44ch}
 .info-row{display:flex;gap:15px;align-items:flex-start;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.09)}
-.info-row .ic{width:42px;height:42px;flex:none;border-radius:8px;background:rgba(255,106,26,.14);display:grid;place-items:center;color:var(--accent)}
+.info-row .ic{width:42px;height:42px;flex:none;border-radius:8px;background:rgba(168,30,77,.14);display:grid;place-items:center;color:var(--accent)}
 .info-row .ic svg{width:20px;height:20px}
 .info-row .lbl{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#8b909c;font-weight:600}
 .info-row a,.info-row span{color:#e9eaee;font-weight:500;font-size:1.02rem}
@@ -235,7 +242,7 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
 <body>
 
 <div id="intro" aria-hidden="true">
-  <div class="il">WILSON <b>CONCRETE</b> PUMPING</div>
+  <div class="il"><img src="img/logo.png" alt="Wilson Concrete Pumping"></div>
   <div class="bar"></div>
 </div>
 
@@ -248,6 +255,7 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
     <nav class="navlinks">
       <a href="#services">Services</a>
       <a href="#about">About</a>
+      <a href="#work">Recent Work</a>
       <a href="#crew">Crew</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
@@ -265,6 +273,7 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
   <button class="mm-close" id="mmClose" aria-label="Close menu">&times;</button>
   <a href="#services">Services</a>
   <a href="#about">About</a>
+  <a href="#work">Recent Work</a>
   <a href="#crew">Crew</a>
   <a href="#reviews">Reviews</a>
   <a href="#contact">Contact</a>
@@ -277,15 +286,15 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
 <!-- ================= HERO ================= -->
 <section class="hero" id="top">
   <div class="hero-slides" aria-hidden="true">
-    <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1590247813693-5541d1c609fd?w=1900&q=80')"></div>
-    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1900&q=80')"></div>
-    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1503328427499-d92d1ac3d174?w=1900&q=80')"></div>
+    <div class="slide active" style="background-image:url('img/hero-frame.webp')"></div>
+    <div class="slide" style="background-image:url('img/hero-mist.webp')"></div>
+    <div class="slide" style="background-image:url('img/hero-sunset.webp')"></div>
   </div>
   <div class="hero-inner">
     <div class="wrap">
       <span class="eyebrow">Concrete Pumping &middot; New Zealand</span>
       <h1>Concrete placed <em>fast, clean</em> and exactly where you need it.</h1>
-      <p class="lead">Line and boom pump hire for builders, contractors and homeowners. From tight back-section pours to big commercial slabs — we get the mix in place without the wheelbarrows.</p>
+      <p class="lead">Line and boom pump hire for builders, contractors and homeowners. From tight back-section pours to big commercial slabs, we get the mix in place without the wheelbarrows.</p>
       <div class="hero-cta">
         <a href="tel:0272210999" class="btn btn-primary">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -293,30 +302,10 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
         </a>
         <a href="#contact" class="btn btn-ghost">Get a quote</a>
       </div>
-      <div class="rating-badge">
+      <a class="rating-badge" href="#reviews">
         <span class="stars" aria-hidden="true"></span>
-        <span><b>5.0</b><small>Trusted by local builders &amp; homeowners</small></span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= TRUST STRIP ================= -->
-<section class="trust">
-  <div class="wrap">
-    <div class="trust-grid">
-      <div class="trust-item">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4.5 8-11.8A8 8 0 0 0 4 10.2C4 17.5 12 22 12 22z"/><circle cx="12" cy="10" r="3"/></svg></span>
-        <div><h4>Mobile across the region</h4><p>Line and boom pumps that come to your site — town or rural, easy access or awkward.</p></div>
-      </div>
-      <div class="trust-item">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-        <div><h4>On site, on time</h4><p>We turn up when your truck does, primed and ready so the pour keeps moving.</p></div>
-      </div>
-      <div class="trust-item">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
-        <div><h4>Clean, tidy pours</h4><p>Careful placement, minimal mess, and we wash down and leave the site right.</p></div>
-      </div>
+        <span><b>Trusted</b><small>by local builders &amp; homeowners</small></span>
+      </a>
     </div>
   </div>
 </section>
@@ -327,32 +316,32 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
     <div class="section-head reveal">
       <span class="eyebrow">What we pump</span>
       <h2>Concrete pumping, sorted</h2>
-      <p>Whatever the pour, we've got the right pump and the operator to place it accurately — first time.</p>
+      <p>Big pour or small, we bring the right pump and an operator who places it accurately, first time.</p>
     </div>
     <div class="svc-grid">
       <article class="svc-card reveal">
-        <div class="svc-media"><span class="tag">Boom Pump</span><img src="https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=900&q=80" alt="Concrete boom pump reaching over a construction site" loading="lazy" width="900" height="562"></div>
-        <div class="svc-body"><h3>Boom Pump Hire</h3><p>Truck-mounted boom to place concrete up, over and into spots a truck chute will never reach — decks, first floors and back sections.</p></div>
+        <div class="svc-media"><span class="tag">Boom Pump</span><img src="img/svc-boom.webp" alt="Wilson boom pump truck set up over a new house slab at sunset" loading="lazy" width="900" height="562"></div>
+        <div class="svc-body"><h3>Boom Pump Hire</h3><p>Truck-mounted boom to place concrete up, over and into spots a truck chute will never reach: decks, first floors and back sections.</p></div>
       </article>
       <article class="svc-card reveal">
-        <div class="svc-media"><span class="tag">Line Pump</span><img src="https://images.unsplash.com/photo-1517089152318-42ec560349c0?w=900&q=80" alt="Concrete being pumped through a line on site" loading="lazy" width="900" height="562"></div>
+        <div class="svc-media"><span class="tag">Line Pump</span><img src="img/svc-line.webp" alt="Crew running the concrete line across a reinforced slab" loading="lazy" width="900" height="562"></div>
         <div class="svc-body"><h3>Line Pump Hire</h3><p>Compact line pumps that thread hose through gates and around houses for tight-access residential pours and smaller jobs.</p></div>
       </article>
       <article class="svc-card reveal">
-        <div class="svc-media"><span class="tag">Residential</span><img src="https://images.unsplash.com/photo-1503328427499-d92d1ac3d174?w=900&q=80" alt="Freshly poured concrete foundation slab" loading="lazy" width="900" height="562"></div>
+        <div class="svc-media"><span class="tag">Residential</span><img src="img/svc-slab.webp" alt="Boom pump reaching over a rural house slab pour" loading="lazy" width="900" height="562"></div>
         <div class="svc-body"><h3>Slabs &amp; Driveways</h3><p>House foundations, garage pads, patios and driveways placed evenly so your finishers can screed straight off the pump.</p></div>
       </article>
       <article class="svc-card reveal">
-        <div class="svc-media"><span class="tag">Commercial</span><img src="https://images.unsplash.com/photo-1521207418485-99c705420785?w=900&q=80" alt="Large commercial construction site pour" loading="lazy" width="900" height="562"></div>
-        <div class="svc-body"><h3>Commercial Pours</h3><p>High-volume slabs, tilt panels and structural work for main contractors — steady output to keep big pours flowing.</p></div>
+        <div class="svc-media"><span class="tag">Commercial</span><img src="img/svc-commercial.webp" alt="Boom pump working a multi-storey commercial structure" loading="lazy" width="900" height="562"></div>
+        <div class="svc-body"><h3>Commercial Pours</h3><p>High-volume slabs, tilt panels and structural work for main contractors. Steady output to keep big pours flowing.</p></div>
       </article>
       <article class="svc-card reveal">
-        <div class="svc-media"><span class="tag">Tight Access</span><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&q=80" alt="Worker managing concrete placement in a confined space" loading="lazy" width="900" height="562"></div>
-        <div class="svc-body"><h3>Difficult-Access Pumping</h3><p>Steep sites, narrow gaps and long hose runs — if the ready-mix truck can't get near it, the pump can.</p></div>
+        <div class="svc-media"><span class="tag">Tight Access</span><img src="img/svc-access.webp" alt="Pump truck placing concrete on a steep gorge bridge site" loading="lazy" width="900" height="562"></div>
+        <div class="svc-body"><h3>Difficult-Access Pumping</h3><p>Steep sites, narrow gaps and long hose runs. If the ready-mix truck can't get near it, the pump can.</p></div>
       </article>
       <article class="svc-card reveal">
-        <div class="svc-media"><span class="tag">Specialist</span><img src="https://images.unsplash.com/photo-1590247813693-5541d1c609fd?w=900&q=80" alt="Concrete being poured and worked on site" loading="lazy" width="900" height="562"></div>
-        <div class="svc-body"><h3>Blinding, Grout &amp; Fill</h3><p>Blinding layers, footings, block-fill and grout — the smaller specialist pours that still need a clean, controlled feed.</p></div>
+        <div class="svc-media"><span class="tag">Specialist</span><img src="img/svc-grout.webp" alt="Night pour with the boom working under lights" loading="lazy" width="900" height="562"></div>
+        <div class="svc-body"><h3>Blinding, Grout &amp; Fill</h3><p>Blinding layers, footings, block-fill and grout. The smaller specialist pours that still need a clean, controlled feed.</p></div>
       </article>
     </div>
   </div>
@@ -363,7 +352,7 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
   <div class="wrap">
     <div class="about-grid">
       <div class="about-media reveal">
-        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1100&q=80" alt="Concrete crew working a pour on a New Zealand site" loading="lazy" width="1100" height="825">
+        <img src="img/about-fleet.webp" alt="The Wilson Concrete Pumping fleet lined up at the yard" loading="lazy" width="1100" height="1100">
         <div class="corner"><b>Locally<br>owned</b><span>Operated by Rhys &amp; the Wilson crew</span></div>
       </div>
       <div class="about-copy reveal">
@@ -381,6 +370,27 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
   </div>
 </section>
 
+<!-- ================= RECENT WORK ================= -->
+<section class="section work" id="work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Recent work</span>
+      <h2>Where the pumps have been</h2>
+      <p>Farm slabs, city high-rises, bridges in the middle of nowhere. A look at the jobs the Wilson fleet has been placing lately.</p>
+    </div>
+    <div class="work-gallery reveal">
+      <img src="img/g-dawn.webp" alt="Three booms working a city site at dawn" loading="lazy">
+      <img src="img/g-rainbow.webp" alt="Wilson pump truck under a rainbow on site" loading="lazy">
+      <img src="img/g-yard.webp" alt="The Wilson fleet parked up at the yard" loading="lazy">
+      <img src="img/g-highrise.webp" alt="Boom reaching up a city high-rise pour" loading="lazy">
+      <img src="img/g-shed.webp" alt="Pumping a slab inside a farm shed" loading="lazy">
+      <img src="img/g-beams.webp" alt="Boom set up over precast beams on a rural job" loading="lazy">
+      <img src="img/g-convoy.webp" alt="Wilson pump truck rolling with the concrete convoy" loading="lazy">
+      <img src="img/g-decal.webp" alt="Wilson Concrete Pumping livery on the truck" loading="lazy">
+    </div>
+  </div>
+</section>
+
 <!-- ================= CREW ================= -->
 <section class="section crew" id="crew">
   <div class="wrap">
@@ -394,7 +404,7 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
         <div class="avatar">RW</div>
         <h3>Rhys</h3>
         <div class="role">Owner / Pump Operator</div>
-        <p>Runs the pump on the day and sorts your booking — the person you'll talk to when you call for a quote.</p>
+        <p>Runs the pump on the day and sorts your booking. He's the person you'll talk to when you call for a quote.</p>
       </div>
       <div class="crew-card reveal">
         <div class="avatar">SO</div>
@@ -433,7 +443,7 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
       </article>
       <article class="rev-card reveal">
         <div class="rev-stars"></div>
-        <p>"We use Wilson on our commercial slabs — steady output, no dramas and they leave the site clean. Reliable pump crew you can build a programme around."</p>
+        <p>"We use Wilson on our commercial slabs. Steady output, no dramas and they leave the site clean. Reliable pump crew you can build a programme around."</p>
         <div class="rev-meta"><span class="ra">DT</span><div><b>Dave T.</b><span>Site Manager &middot; 3 weeks ago</span></div></div>
       </article>
     </div>
@@ -468,7 +478,7 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
       <div class="contact-info reveal">
         <span class="eyebrow">Get in touch</span>
         <h2>Book the pump</h2>
-        <p>Tell us the site, the day and roughly how many metres you're pouring — we'll sort the right pump and a price.</p>
+        <p>Tell us the site, the day and roughly how many metres you're pouring, and we'll sort the right pump and a price.</p>
 
         <div class="info-row">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
@@ -480,11 +490,11 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
         </div>
         <div class="info-row">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4.5 8-11.8A8 8 0 0 0 4 10.2C4 17.5 12 22 12 22z"/><circle cx="12" cy="10" r="3"/></svg></span>
-          <div><div class="lbl">Service area</div><span>Mobile — we come to your site across the region</span></div>
+          <div><div class="lbl">Service area</div><span>Mobile, we come to your site across the region</span></div>
         </div>
         <div class="info-row">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-          <div><div class="lbl">Hours</div><span>Mon–Sat, early starts &mdash; pours arranged to suit your truck</span></div>
+          <div><div class="lbl">Hours</div><span>Mon–Sat, early starts, pours arranged to suit your truck</span></div>
         </div>
 
         <div class="socials">
@@ -511,7 +521,7 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
           Email us about your pour
         </a>
-        <p class="fineprint">No forms, no waiting on hold — you reach Rhys direct.</p>
+        <p class="fineprint">No forms, no waiting on hold, you reach Rhys direct.</p>
       </div>
     </div>
   </div>
