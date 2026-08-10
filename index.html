@@ -59,6 +59,8 @@ header.scrolled{background:rgba(14,15,18,.92);backdrop-filter:blur(10px);box-sha
 .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
 .brand{display:flex;align-items:center;gap:11px;color:#fff}
 .brand .mark{width:40px;height:40px;border-radius:8px;background:var(--accent);display:grid;place-items:center;font-family:'Bebas Neue';font-size:1.5rem;color:#fff;flex:none}
+.brand-plate{background:#fff;border-radius:6px;padding:7px 13px;display:flex;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.brand-plate img{height:32px;width:auto;display:block}
 .brand b{font-family:'Bebas Neue';font-weight:400;font-size:1.34rem;letter-spacing:.04em;line-height:1}
 .brand span{display:block;font-family:'Sora';font-weight:600;font-size:.58rem;letter-spacing:.28em;color:var(--accent);text-transform:uppercase}
 .navlinks{display:flex;align-items:center;gap:30px}
@@ -249,14 +251,12 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
 <header id="header">
   <div class="wrap nav">
     <a href="#top" class="brand" aria-label="Wilson Concrete Pumping home">
-      <span class="mark">W</span>
-      <span><b>Wilson Concrete Pumping</b><span>Line &amp; Boom Pump Hire</span></span>
+      <span class="brand-plate"><img src="img/logo.png" alt="Wilson Concrete Pumping"></span>
     </a>
     <nav class="navlinks">
       <a href="#services">Services</a>
       <a href="#about">About</a>
       <a href="#work">Recent Work</a>
-      <a href="#crew">Crew</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -274,7 +274,6 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
   <a href="#services">Services</a>
   <a href="#about">About</a>
   <a href="#work">Recent Work</a>
-  <a href="#crew">Crew</a>
   <a href="#reviews">Reviews</a>
   <a href="#contact">Contact</a>
   <a href="tel:0272210999" class="btn btn-primary">
@@ -387,37 +386,6 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
       <img src="img/g-beams.webp" alt="Boom set up over precast beams on a rural job" loading="lazy">
       <img src="img/g-convoy.webp" alt="Wilson pump truck rolling with the concrete convoy" loading="lazy">
       <img src="img/g-decal.webp" alt="Wilson Concrete Pumping livery on the truck" loading="lazy">
-    </div>
-  </div>
-</section>
-
-<!-- ================= CREW ================= -->
-<section class="section crew" id="crew">
-  <div class="wrap">
-    <div class="section-head on-dark reveal">
-      <span class="badge-pill">Example team</span>
-      <h2>Meet the crew</h2>
-      <p>The people on the pump when you book Wilson Concrete Pumping.</p>
-    </div>
-    <div class="crew-grid">
-      <div class="crew-card reveal">
-        <div class="avatar">RW</div>
-        <h3>Rhys</h3>
-        <div class="role">Owner / Pump Operator</div>
-        <p>Runs the pump on the day and sorts your booking. He's the person you'll talk to when you call for a quote.</p>
-      </div>
-      <div class="crew-card reveal">
-        <div class="avatar">SO</div>
-        <h3>Site Offsider</h3>
-        <div class="role">Hose &amp; Placement</div>
-        <p>Handles the line on the ground, guides placement and keeps the pour tidy from truck to finish.</p>
-      </div>
-      <div class="crew-card reveal">
-        <div class="avatar">TC</div>
-        <h3>Truck Operator</h3>
-        <div class="role">Boom &amp; Logistics</div>
-        <p>Sets up, positions the boom and keeps the pump fed and flowing so the crew never stands still.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -542,8 +510,7 @@ footer{background:var(--ink);color:#c9cdd6;padding:60px 0 30px}
     <div class="foot-grid">
       <div class="foot-brand">
         <a href="#top" class="brand">
-          <span class="mark">W</span>
-          <span><b>Wilson Concrete Pumping</b><span>Line &amp; Boom Pump Hire</span></span>
+          <span class="brand-plate"><img src="img/logo.png" alt="Wilson Concrete Pumping"></span>
         </a>
         <p>Local, owner-operated concrete pump hire. Line and boom pumps for residential, commercial and tight-access pours across New Zealand.</p>
       </div>
